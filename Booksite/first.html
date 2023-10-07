@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBhuwan's Book Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("books\ \(1\).jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            /* border: 2px solid red; */
+            top: -10px;
+            left: 30px;
+
+
+        }
+
+        .left img {
+            width: 140px;
+            /* padding: 0px 45px 0px 35px; */
+            margin: 5px auto;
+
+        }
+
+        .left div {
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 0 black, 1px 1px 0 black, -1px 0 0 black, 0 -1px 0 black;
+        }
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            margin: 45px auto;
+            width: 65%;
+        }
+
+        .navbar {
+            display: block;
+        }
+
+        .mid .navbar li {
+            display: inline-block;
+            font-size: 25px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            /* border: 2px solid red; */
+            /* padding: 34px 23px; */
+            margin: 25px;
+        }
+
+        .right {
+            position: absolute;
+            display: inline-block;
+            right: 15px;
+            top: 40px;
+            /* border: 2px solid red; */
+            width: 23%;
+
+
+        }
+
+        .right input {
+            /* border: 2px solid red; */
+            border-radius: 55px;
+            padding: 5px 0px 5px 15px;
+            /* margin: 5px; */
+        }
+
+        .right button {
+            display: inline-block;
+            width: 15%;
+            padding: 5px 5px 5px 5px;
+            background: #2196F3;
+            color: white;
+            font-size: 15px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+            border-radius: 55px;
+        }
+
+        .container {
+            display: inline-block;
+            position: absolute;
+            top: 35%;
+            left: 6%;
+            border: 2px transparent rgb(54, 52, 52);
+            background-color: #00000075;
+            border-radius: 5px;
+            padding: 35px;
+            color: white;
+            font-size: 25px;
+
+        }
+
+        .container .form input {
+            display: block;
+            border: 2px solid black;
+            margin: 20px;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 2px 15px 2px 15px;
+            font-size: 15px;
+            width: 80%;
+        }
+
+        .container .form .btn {
+            /* margin: 15px 15px; */
+            text-align: center;
+            position: relative;
+            left: 20px;
+            padding: 4px 50px;
+            cursor: pointer;
+        }
+        .down{
+            border: 2px transparent #1b17177c;
+            background-color: #0000007c;
+            position: fixed;
+            color: white;
+            display: inline-block;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            text-align: center;
+            padding: 8px;
+            /* opacity: 0.5; */
+            
+        }
+        .down span{
+            /* font-family: 'Courier New', Courier, monospace; */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="left">
+        <img src="logo.png" alt="Image can't be loaded!">
+        <div>BBhuwan's Book Club</div>
+
+    </header>
+    <div class="mid">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Collections</a> </li>
+                <li><a href="#">Genre</a> </li>
+                <li><a href="#">Services</a> </li>
+                <li><a href="#">About Us</a> </li>
+            </ul>
+
+        </nav>
+    </div>
+    <form action="action.php" class="right">
+        <input type="text" placeholder="Search in here.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="container">
+        <div>Join with us for best book eperiences..</div>
+        <form action="action.php" class="form">
+            <input type="text" name="myNmae" placeholder="Enter you name here">
+            <input type="number" name="myPhone" placeholder="Enter you Phone number here">
+            <input type="email" name="myEmail" placeholder="Enter you email here">
+            <input type="datetime" name="myDate" placeholder="Enter you DOB here [YYYY-MM-DD]">
+            <input type="text" name="myAdress" placeholder="Enter you Adress here">
+            <button type="reset" class="btn">Reset Now</button>
+            <button type="submit" class="btn">Submit Now</button>
+        </form>
+    </div>
+    <footer class="down">
+        <span>Designed and Copyright &copy : BBhuwan. </span> 
+       <span>All Right Reserved 2022.</span> 
+
+    </footer>
+
+
+
+</body>
+
+</html>
